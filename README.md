@@ -6,3 +6,9 @@
 
   Coming soon.
   <!-- - [Web3]( -->
+
+## Links
+
+  - [Github]('https://github.com/loveliiivelaugh/web3-portfolio')
+  
+  - [Live Site]('https://web3-portfolio.netlify.app/')
