@@ -1,11 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import {useNavigate} from "react-router-dom";
-import {Box, Button, Card, CardContent, Container, Grid, Paper, Typography} from "@mui/material";
+import {Box, Button, Container, Grid, Typography} from "@mui/material";
 import {makeStyles} from "@material-ui/core/styles";
 import { motion } from 'framer-motion';
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
-import {items} from './../data';
+import { items } from './../data';
 
 
 const useStyles = makeStyles((theme) => ({

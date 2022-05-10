@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
 import { ThemeProvider } from "./../util/theme";
+import logo from "../assets/favicon.ico";
 // lazy load pages and global components
 const HomePage = lazy(() => import('./index'));
 const ProjectLaunchPage = lazy(() => import('./ProjectLaunch'));
@@ -46,7 +47,7 @@ const Layout = () => {
           bgImageOpacity={1}
           description="A full stack craftsmen of today's web technologies"
           copyright={`© ${new Date().getFullYear()} Michael Woodward`}
-          logo="https://uploads.divjoy.com/logo.svg"
+          logo={logo}
           logoInverted="https://uploads.divjoy.com/logo-white.svg"
           sticky
         />

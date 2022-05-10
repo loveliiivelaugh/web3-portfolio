@@ -69,17 +69,15 @@ function Navbar(props) {
   return (
     <Section bgColor={props.color} size="auto">
       <AppBar position="static" color="transparent" elevation={0}>
-        <Container disableGutters={true}>
+        <Container disableGutters>
           <Toolbar>
             <Link to="/">
-              <img src={logo} alt="Logo" className={classes.logo} />
+              <img src={logo} className="App-logo" alt="Logo" />
             </Link>
             <div className={classes.spacer} />
             {pathname !== "/" && (
               <IconButton
-                onClick={() => {
-                  props.setDrawerOpen(true);
-                }}
+                onClick={() => props.setDrawerOpen(true)}
                 color="inherit"
               >
                 <MenuIcon />
