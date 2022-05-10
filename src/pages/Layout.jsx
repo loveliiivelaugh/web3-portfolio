@@ -6,10 +6,6 @@ import { ThemeProvider } from "./../util/theme";
 // lazy load pages and global components
 const HomePage = lazy(() => import('./index'));
 const ProjectLaunchPage = lazy(() => import('./ProjectLaunch'));
-const SingleProjectPage = lazy(() => import('./SingleProject'));
-// const Dashboard = lazy(() => import('./Dashboard'));
-const ThreeGame = lazy(() => import('./ThreeGame'));
-// const SignInPage = lazy(() => import('./SignIn'));
 const Navbar = lazy(() => import('../components/Navbar'));
 const Footer = lazy(() => import('../components/Footer'));
 
@@ -27,10 +23,6 @@ const Layout = () => {
   const routes = [
     { path: '/', element: <HomePage /> },
     { path: '/projects/:id', element: <ProjectLaunchPage setDrawerOpen={setDrawerOpen} /> },
-    { path: '/:category/:id', element: <SingleProjectPage /> },
-    // { path: '/dashboard', element: <Dashboard /> },
-    { path: '/three', element: <ThreeGame /> },
-    // { path: '/signin', element: <SignInPage /> },
     { path: '*', element: <div>Not Found...</div> },
   ];
   return (

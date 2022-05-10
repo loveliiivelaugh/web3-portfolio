@@ -41,20 +41,15 @@ const ProjectLaunch = (props) => {
             <Grid container>
               <Grid item md={6}>
                 <Stack>
-                  <img src={phone} style={{ padding: '20px', height: '40%', width: '40%', margin: 'auto' }}></img>
-                  <img src={tablet} style={{ padding: '20px', height: '60%', width: '60%', margin: 'auto' }}></img>
-                  <img src={computer} style={{ padding: '0px', height: '90%', width: '90%', margin: 'auto' }}></img>
+                  <img src={phone} style={{ padding: '20px', height: '40%', width: '40%', margin: 'auto' }} alt="phone example" />
+                  <img src={tablet} style={{ padding: '20px', height: '60%', width: '60%', margin: 'auto' }} alt="tablet example" />
+                  <img src={computer} style={{ padding: '0px', height: '90%', width: '90%', margin: 'auto' }} alt="computer example" />
                 </Stack>
               </Grid>
               <Grid item md={6}>
                 <Box
-                  sx={{
-                    padding: '10px',
-                  }}
-                  textAlign={{
-                    xs: 'center',
-                    md: 'left',
-                  }}
+                  sx={{ padding: '10px' }}
+                  textAlign={{ xs: 'center', md: 'left' }}
                 >
                   <MuiTimeline />
                   <Typography variant="h4" gutterBottom>
@@ -64,14 +59,10 @@ const ProjectLaunch = (props) => {
                     {work.find(({ title }) => title === selected)?.descr || work[0]?.descr || 
                     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'}
                   </Typography>
-                  <Box mt={2} textAlign={{
-                      xs: 'center',
-                      md: 'right',
-                    }}
-                    p={{
-                      xs: 2,
-                      md: 4,
-                    }}
+                  <Box 
+                    mt={2} 
+                    textAlign={{ xs: 'center', md: 'right' }}
+                    p={{ xs: 2, md: 4 }}
                   >
                     <Button variant="contained" color="primary">
                       Live Demo
@@ -101,7 +92,12 @@ const ProjectLaunch = (props) => {
                 // onMouseLeave={() => setOverlay('')}
                 sx={{ position: 'relative', mb: 0 }}
               >
-              <img id={`${title}-card`} src={`https://random.imagecdn.app/340/200`} style={{ opacity: overlay === `${title}-card` ? 0.1 : 1 }}></img>
+              <img 
+                id={`${title}-card`}
+                src={`https://random.imagecdn.app/340/200`}
+                style={{ opacity: overlay === `${title}-card` ? 0.1 : 1 }}
+                alt={`${title} project`}
+              ></img>
               <Typography variant="h4" sx={{
                 opacity: overlay === `${title}-card` ? 0.05 : 1,
                 position: 'absolute',

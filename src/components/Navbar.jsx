@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -47,6 +48,12 @@ function Navbar(props) {
       className={classes.drawerList}
       onClick={() => props.setDrawerOpen(false)}
     >
+      <ListItem>
+        <ListItemText>
+          <strong>{path.replace('-', ' ')} Projects</strong>
+        </ListItemText>
+      </ListItem>
+      <Divider />
     {projects
       .find(({ category }) => category === path)?.projects
       .map(({ title }, i) => (
