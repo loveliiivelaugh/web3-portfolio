@@ -1,8 +1,11 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
+import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -15,7 +18,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { makeStyles } from "@material-ui/core/styles";
 import Section from "./Section";
 import { Link } from "react-router-dom";
-import logo from "../assets/favicon.ico";
+import logo from "../assets/images/custom-logo.png";
 // import { useDarkMode } from "../util/theme";
 import { projects } from "../data";
 
@@ -75,6 +78,16 @@ function Navbar(props) {
               <img src={logo} className="App-logo" alt="Logo" />
             </Link>
             <div className={classes.spacer} />
+            <Stack>
+              <Button variant="outlined" sx={{ color: '#fff' }}>
+                Connect Wallet
+              </Button>
+              {!window.ethereum && (
+                <Typography variant="body1" component="p" sx={{ color: '#900' }}>
+                  You must install the MetaMask browser extension @ <a href="https://metamask.io/" style={{ color: '#fff' }}>metamask.io</a>
+                </Typography>
+              )}
+            </Stack>
             {pathname !== "/" && (
               <IconButton
                 onClick={() => props.setDrawerOpen(true)}

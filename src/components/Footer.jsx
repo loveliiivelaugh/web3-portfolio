@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   brand: {
     display: "block",
-    height: 32,
+    height: 128,
   },
   social: {
     alignItems: "flex-end",
@@ -90,11 +90,13 @@ function Footer(props) {
     >
       <Container>
         <div className={classes.wrapper}>
-          <div className={`${classes.item} ${classes.left}`}>
-            <Link to="/">
-              <img src={props.logo} alt="Logo" className={classes.brand} />
-            </Link>
-          </div>
+          {pathname !== "/" && (
+            <div className={`${classes.item} ${classes.left}`}>
+              <Link to="/">
+                <img src={props.logo} alt="Logo" className={classes.brand} />
+              </Link>
+            </div>
+          )}
           <div
             className={`${classes.item} ${classes.right} ${classes.smallLinks}`}
           >

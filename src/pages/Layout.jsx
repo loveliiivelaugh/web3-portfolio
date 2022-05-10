@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
 import { ThemeProvider } from "./../util/theme";
-import logo from "../assets/favicon.ico";
+import logo from "../assets/images/custom-logo.png";
 // lazy load pages and global components
 const HomePage = lazy(() => import('./index'));
 const ProjectLaunchPage = lazy(() => import('./ProjectLaunch'));
