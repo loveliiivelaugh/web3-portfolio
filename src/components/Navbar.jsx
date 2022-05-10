@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
-import Hidden from "@mui/material/Hidden";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import Button from "@mui/material/Button";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import Divider from "@mui/material/Divider";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Drawer from "@mui/material/Drawer";
@@ -19,10 +14,9 @@ import ListItemText from "@mui/material/ListItemText";
 import { makeStyles } from "@material-ui/core/styles";
 import Section from "./Section";
 import { Link } from "react-router-dom";
-// import { Link } from "./../util/router";
-// import { useAuth } from "./../hooks/useAuth";
-// import { useDarkMode } from "../util/theme";
 import logo from "../assets/favicon.ico";
+// import { useDarkMode } from "../util/theme";
+import { projects } from "../data";
 
 const useStyles = makeStyles((theme) => ({
   logo: {
@@ -38,25 +32,32 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Navbar(props) {
-  const classes = useStyles();
-  // const { user } = useAuth();
   // const darkMode = useDarkMode();
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const [menuState, setMenuState] = useState(null);
+  const classes = useStyles();
+  const { pathname } = useLocation();
+  const path = pathname.split('/')[2];
+
   // Use inverted logo if specified
   // and we are in dark mode
   // const logo =
   //   props.logoInverted && darkMode.value ? props.logoInverted : props.logo;
 
-  const handleOpenMenu = (event, id) => {
-    // Store clicked element (to anchor the menu to)
-    // and the menu id so we can tell which menu is open.
-    setMenuState({ anchor: event.currentTarget, id });
-  };
-
-  const handleCloseMenu = () => {
-    setMenuState(null);
-  };
+  const TheList = () => (
+    <List
+      className={classes.drawerList}
+      onClick={() => props.setDrawerOpen(false)}
+    >
+    {projects
+      .find(({ category }) => category === path)?.projects
+      .map(({ title }, i) => (
+        <ListItem key={i} component={Link} to="/" button>
+          <ListItemText>
+            {title || `Project ${i + 1}`}
+          </ListItemText>
+        </ListItem>
+    ))}
+    </List>
+  );
 
   return (
     <Section bgColor={props.color} size="auto">
@@ -67,69 +68,25 @@ function Navbar(props) {
               <img src={logo} alt="Logo" className={classes.logo} />
             </Link>
             <div className={classes.spacer} />
-            <Hidden smUp={true} implementation="css">
+            {pathname !== "/" && (
               <IconButton
                 onClick={() => {
-                  setDrawerOpen(true);
+                  props.setDrawerOpen(true);
                 }}
                 color="inherit"
               >
                 <MenuIcon />
               </IconButton>
-            </Hidden>
+            )}
           </Toolbar>
         </Container>
       </AppBar>
       <Drawer
         anchor="right"
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
+        open={props.drawerOpen}
+        onClose={() => props.setDrawerOpen(false)}
       >
-        <List
-          className={classes.drawerList}
-          onClick={() => setDrawerOpen(false)}
-        >
-          <ListItem component={Link} to="/" button={true}>
-            <ListItemText>List Item</ListItemText>
-          </ListItem>
-          {/* {!user && (
-            <ListItem component={Link} to="/auth/signin" button={true}>
-              <ListItemText>Sign in</ListItemText>
-            </ListItem>
-          )}
-
-          {user && (
-            <>
-              <ListItem component={Link} to="/dashboard" button={true}>
-                <ListItemText>Dashboard</ListItemText>
-              </ListItem>
-              <ListItem component={Link} to="/settings/general" button={true}>
-                <ListItemText>Settings</ListItemText>
-              </ListItem>
-              <Divider />
-              <ListItem
-                button={true}
-                onClick={(event) => {
-                  // signout();
-                }}
-              >
-                <ListItemText>Sign out</ListItemText>
-              </ListItem>
-            </>
-          )} */}
-
-          {/* <ListItem>
-            <IconButton
-              color="inherit"
-              onClick={darkMode.toggle}
-              style={{ opacity: 0.6 }}
-            >
-              {darkMode.value && <NightsStayIcon />}
-
-              {!darkMode.value && <WbSunnyIcon />}
-            </IconButton>
-          </ListItem> */}
-        </List>
+        <TheList />
       </Drawer>
     </Section>
   );

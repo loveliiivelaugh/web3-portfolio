@@ -23,10 +23,10 @@ const LoadingPage = () => (
 
 const Layout = () => {
   // const ether = useEthers();
-  // console.log("ether", { ether });
+  const [drawerOpen, setDrawerOpen] = React.useState(false);
   const routes = [
     { path: '/', element: <HomePage /> },
-    { path: '/projects/:id', element: <ProjectLaunchPage /> },
+    { path: '/projects/:id', element: <ProjectLaunchPage setDrawerOpen={setDrawerOpen} /> },
     { path: '/:category/:id', element: <SingleProjectPage /> },
     // { path: '/dashboard', element: <Dashboard /> },
     { path: '/three', element: <ThreeGame /> },
@@ -41,6 +41,8 @@ const Layout = () => {
           color="default"
           logo="https://uploads.divjoy.com/logo.svg"
           logoInverted="https://uploads.divjoy.com/logo-white.svg"
+          setDrawerOpen={setDrawerOpen}
+          drawerOpen={drawerOpen}
         />
         <Routes>
           {routes.map((props, key) => <Route key={key}{...props}/>)}
