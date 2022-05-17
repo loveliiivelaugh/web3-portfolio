@@ -11,233 +11,99 @@ export const items = [
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: web,
-    projects: [
-      {
-        title: "Web Development",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-        image: web,
-      },
-      {
-        title: "Blockchain",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: blockchain,
-      },
-      {
-        title: "eCommerce",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
-      },
-      {
-        title: "Artificial Intelligence",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
-      },
-    ]
+    url: "https://basic-crypto-dashboard.netlify.app/",
+    repo: "https://github.com/loveliiivelaugh/crypto-dashboard",
   },
   {
     title: "Blockchain",
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: blockchain,
-    projects: [
-      {
-        title: "Web Development",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-        image: "https://uploads.divjoy.com/undraw-mind_map_cwng.svg",
-      },
-      {
-        title: "Blockchain",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg",
-      },
-      {
-        title: "eCommerce",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
-      },
-      {
-        title: "Artificial Intelligence",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
-      },
-    ]
+    url: "https://basic-crypto-dashboard.netlify.app/",
+    repo: ""
   },
   {
     title: "Fintech",
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: fintech,
-    projects: [
-      {
-        title: "Web Development",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-        image: "https://uploads.divjoy.com/undraw-mind_map_cwng.svg",
-      },
-      {
-        title: "Blockchain",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg",
-      },
-      {
-        title: "eCommerce",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
-      },
-      {
-        title: "Artificial Intelligence",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
-      },
-    ]
+    url: "https://basic-crypto-dashboard.netlify.app/",
+    repo: ""
   },
   {
     title: "eCommerce",
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: ecommerce,
-      projects: [
-      {
-        title: "Web Development",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-        image: "https://uploads.divjoy.com/undraw-mind_map_cwng.svg",
-      },
-      {
-        title: "Blockchain",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg",
-      },
-      {
-        title: "eCommerce",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
-      },
-      {
-        title: "Artificial Intelligence",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
-      },
-    ]
+    url: "https://coffee-shop-shopify-context.netlify.app/",
+    repo: "https://github.com/loveliiivelaugh/coffee-shopify",
   },
   {
     title: "Artificial Intelligence",
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-      image: ai,
-      projects: [
-      {
-        title: "Web Development",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-        image: "https://uploads.divjoy.com/undraw-mind_map_cwng.svg",
-      },
-      {
-        title: "Blockchain",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg",
-      },
-      {
-        title: "eCommerce",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
-      },
-      {
-        title: "Artificial Intelligence",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
-      },
-    ]
+    image: ai,
+    url: "https://basic-crypto-dashboard.netlify.app/",
+    repo: ""
   },
   {
     title: "Back End Development",
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-      image: backend,
-      projects: [
-      {
-        title: "Web Development",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-        image: "https://uploads.divjoy.com/undraw-mind_map_cwng.svg",
-      },
-      {
-        title: "Blockchain",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg",
-      },
-      {
-        title: "eCommerce",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-having_fun_iais.svg",
-      },
-      {
-        title: "Artificial Intelligence",
-        description:
-          "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-          image: "https://uploads.divjoy.com/undraw-balloons_vxx5.svg",
-      },
-    ]
+    image: backend,
+    url: "https://basic-crypto-dashboard.netlify.app/",
+    repo: ""
   },
 ];
-
-export const indexPageData = {
-
-}
 
 export const projects = [
   {
     category: "web-development",
     projects: [
       {
-        title: "Landing Page",
-        descr: "A simple landing page using a modern design built to capture emails and boost product awareness.",
-        screenshot:"",
-        type: "Landing Page"
-      },
-      {
         title: "Online Shop",
         descr: "A multi page eCommerce online website featuring fine coffee. This online shop includes a dynamic shopping cart accessible from anywhere in the site. This shop is also connected to Shopify on the back end which handles payment processing as well as product management services.",
-        screenshot: "",
+        screenshots: {
+          phone: '',
+          tablet: '',
+          desktop: '',
+        },
         url: "https://coffee-shop-shopify-context.netlify.app/",
         repo: "https://github.com/loveliiivelaugh/coffee-shopify",
-        type: "eCommerce"
+        type: "web"
       },
       {
-        title: "Blog",
-        descr: "A basic blog website powered by Wordpress built with React.",
-        screenshot: "",
+        title: "Crypto Analysis Dashboard",
+        descr: "A dashboard to track and analyze digital assets.",
+        screenshots: {
+          phone: '',
+          tablet: '',
+          desktop: '',
+        },
+        url: "https://basic-crypto-dashboard.netlify.app/",
+        repo: "https://github.com/loveliiivelaugh/crypto-dashboard",
         type: "Blog"
       },
       {
         title: "Analytics Dashboard",
         descr: "A private dashboard to track and analyze my private information across many areas of my life including health metrics, work hours, budget and expense tracking, investments, entertainment analytics, and more.",
-        screenshot: "",
+        screenshots: {
+          phone: '',
+          tablet: '',
+          desktop: '',
+        },
+        url: "https://coffee-shop-shopify-context.netlify.app/",
+        repo: "https://github.com/loveliiivelaugh/coffee-shopify",
         type: "Analytics Dashboard"
       },
       {
         title: "Portfolio",
         descr: "My personal portfolio which highlights a moderately advanced architecture with a simple design and includes some advanced animations. Content is powered by a CMS.",
-        screenshot: "",
+        screenshots: {
+          phone: '',
+          tablet: '',
+          desktop: '',
+        },
         url: "https://www.michaelwoodward.dev/",
         repo: "https://github.com/loveliiivelaugh/vite-porfolio",
         type: "Portfolio" 
@@ -245,7 +111,11 @@ export const projects = [
       {
         title: "Full Stack App",
         descr: "A full stack application to manage employees at a company. Uses a noSQL database on the backend.",
-        screenshot: "",
+        screenshots: {
+          phone: '',
+          tablet: '',
+          desktop: '',
+        },
         repo: "https://github.com/loveliiivelaugh/employee-management-system",
         url: "https://fire-react-employee-management.netlify.app/",
         type: "Full Stack App"
@@ -312,6 +182,29 @@ export const projects = [
       },
       {
         title: "Automation",
+        descr: ""
+      },
+    ]
+  },
+  {
+    category: "back-end-development",
+    projects: [
+      {
+        title: "Server's",
+        descr: "Image processing, image classification, object detection, pose detection, facial recognition.",
+        url: "https://image-classification-test.netlify.app/",
+        repo: ""
+      },
+      {
+        title: "API's",
+        descr: "Audio processing, speech recognition, voice recognition, auditory matching, pitch identifier, voice enabled, Natural Language Processing (GPT3), classification."
+      },
+      {
+        title: "Authentication",
+        descr: ""
+      },
+      {
+        title: "Webhooks",
         descr: ""
       },
     ]

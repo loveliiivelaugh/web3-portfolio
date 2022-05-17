@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import {Box, Button, Container, Grid, Typography} from "@mui/material";
 import {makeStyles} from "@material-ui/core/styles";
 import { motion } from 'framer-motion';
@@ -61,7 +61,7 @@ function FeaturesSection(props) {
         />
         <Container maxWidth={false}>
           <Grid container spacing={4}>
-          {items.map(({ title, description, image }, index) => (
+          {items.map(({ title, description, image, repo, url }, index) => (
             <Grid key={index} item md={4}>
             <React.Suspense fallback="Loading...">
               <motion.div
@@ -69,8 +69,7 @@ function FeaturesSection(props) {
                 onHoverStart={handleHover} 
                 onHoverEnd={() => setOverlay('')}
                 whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => navigate(`/projects/${title.toLowerCase().replace(/ /g, "-")}`)}
+                // whileTap={{ scale: 0.9 }}
                 style={{ position: 'relative' }}
               >
               <motion.img 
@@ -114,8 +113,12 @@ function FeaturesSection(props) {
                   <Typography variant="subtitle1">
                     {description}
                   </Typography>
-                  <Button variant="outlined" color="primary" onClick={() => navigate(`/projects/${title.toLowerCase().replace(/ /g, "-")}`)}>
-                    Learn More
+                  <Button variant="contained" color="primary" onClick={() => window.open(repo)}>
+                    Source Code
+                  </Button>
+                  {' '}
+                  <Button variant="outlined" color="primary" sx={{ color: '#fff' }} onClick={() => window.open(url)}>
+                    See Live
                   </Button>
                 </Box>
               </motion.div>

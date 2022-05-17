@@ -1,7 +1,8 @@
 
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import { Box, Button, Card, Container, Grid, Paper, Stack, Typography } from "@mui/material";
-import { items, projects } from './../data';
+import { projects } from './../data';
 import { ColoredTransition } from "../animations/pageTransitions";
 import MuiTimeline from '../components/muiTemplates/MuiTimeline';
 // images
@@ -35,7 +36,6 @@ const ProjectLaunch = (props) => {
       <ColoredTransition delay={2} color="#000" direction="up" />
       <ColoredTransition delay={1} color="#333" direction="up" />
       <Container maxWidth="lg">
-      {selected !== 'all' ? (
         <Paper elevation={16} sx={{ borderRadius: '25px', m: 4 }}>
           <Card>
             <Grid container>
@@ -64,9 +64,11 @@ const ProjectLaunch = (props) => {
                     textAlign={{ xs: 'center', md: 'right' }}
                     p={{ xs: 2, md: 4 }}
                   >
+                  <Link to={'#'}>
                     <Button variant="contained" color="primary">
                       Live Demo
                     </Button>
+                  </Link>
                     {' '}
                     <Button variant="outlined" color="primary">
                       Source Code
@@ -81,66 +83,6 @@ const ProjectLaunch = (props) => {
             </Grid>
           </Card>
         </Paper>
-      ) : (
-        <Grid container spacing={4}>
-        {items.map(({ title, description }, index) => (
-          <Grid key={index} item md={4}>
-            <Paper elevation={16} sx={{ borderRadius: '25px' }}>
-              <Card 
-                id={`${title}-card`} 
-                onMouseEnter={handleHover} 
-                // onMouseLeave={() => setOverlay('')}
-                sx={{ position: 'relative', mb: 0 }}
-              >
-              <img 
-                id={`${title}-card`}
-                src={`https://random.imagecdn.app/340/200`}
-                style={{ opacity: overlay === `${title}-card` ? 0.1 : 1 }}
-                alt={`${title} project`}
-              ></img>
-              <Typography variant="h4" sx={{
-                opacity: overlay === `${title}-card` ? 0.05 : 1,
-                position: 'absolute',
-                top: '120px',
-                width: '300px',
-                padding: '10px',
-              }}>
-                {title}
-              </Typography>
-                <Box
-                  sx={{
-                    opacity: overlay === `${title}-card` ? 1 : 0,
-                    position: 'absolute',
-                    top: '25px',
-                    width: '300px',
-                    padding: '10px',
-                    // zIndex: 10
-                  }}
-                  textAlign={{
-                    xs: 'center',
-                    md: 'left',
-                  }}
-                >
-                
-                  <Typography variant="h5" gutterBottom>
-                    {title}
-                  </Typography>
-                  <Typography variant="subtitle1">
-                    {description}
-                  </Typography>
-                  <Button variant="contained" color="primary" onClick={() => window.location.assign(`/projects/${projectCategory}/${title.toLowerCase().replace(/ /g, "-")}`)}>
-                    Live Demo
-                  </Button>
-                  <Button variant="outlined" color="primary">
-                    Source Code
-                  </Button>
-                </Box>
-              </Card>
-            </Paper>
-          </Grid>
-        ))}
-        </Grid>
-      )}
       </Container>
     </>
   )

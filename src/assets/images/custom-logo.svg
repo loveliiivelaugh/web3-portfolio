@@ -7,12 +7,39 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
+   sodipodi:docname="custom-logo.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   inkscape:export-filename="/Users/michaelwoodward/dApps/portfolio/src/assets/images/custom-logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77771465"
+     inkscape:cx="143.36878"
+     inkscape:cy="576.04676"
+     inkscape:window-width="1510"
+     inkscape:window-height="1166"
+     inkscape:window-x="1050"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2">
     <linearGradient
+       inkscape:collect="always"
        id="linearGradient11557">
       <stop
          style="stop-color:#ffad55;stop-opacity:1;"
@@ -24,6 +51,7 @@
          id="stop11555" />
     </linearGradient>
     <linearGradient
+       inkscape:collect="always"
        id="linearGradient11351">
       <stop
          style="stop-color:#d30054;stop-opacity:1;"
@@ -47,6 +75,7 @@
        height="519.47076"
        id="rect3890-0" />
     <meshgradient
+       inkscape:collect="always"
        id="meshgradient11189"
        gradientUnits="userSpaceOnUse"
        x="249.55457"
@@ -75,6 +104,7 @@
       </meshrow>
     </meshgradient>
     <linearGradient
+       inkscape:collect="always"
        xlink:href="#linearGradient11351"
        id="linearGradient11353"
        x1="249.55456"
@@ -83,6 +113,7 @@
        y2="488.55532"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
+       inkscape:collect="always"
        xlink:href="#linearGradient11557"
        id="linearGradient11559"
        x1="218.82529"
@@ -92,6 +123,8 @@
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
      id="layer1">
     <ellipse
        id="path9396"
@@ -130,7 +163,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:Herculanum;-inkscape-font-specification:Herculanum;white-space:pre;shape-inside:url(#rect3890);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="178.72852"
          y="494.42965"
-         id="tspan12054">M</tspan></text>
+         id="tspan12109">M</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(-0.26458333,0,0,-0.26458333,207.26477,263.57292)"
@@ -138,7 +171,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:Herculanum;-inkscape-font-specification:Herculanum;white-space:pre;shape-inside:url(#rect3890-0);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="178.72852"
          y="494.42965"
-         id="tspan12056">M</tspan></text>
+         id="tspan12111">M</tspan></text>
     <path
        style="fill:none;stroke-width:1.28582"
        d="m 578.3658,596.2984 c -11.29416,-15.81301 -13.2077,-27.70511 -7.60237,-47.2463 4.07378,-14.20191 10.81548,-29.19581 16.16326,-35.94791 4.68864,-5.9199 4.83723,-7.74108 0.93102,-11.41078 -3.3591,-3.1557 -12.56034,-3.90051 -14.68248,-1.1885 -0.69172,0.884 -1.96239,4.50037 -2.82371,8.03637 -2.37603,9.75437 -15.721,52.58111 -16.73519,53.70665 -0.48969,0.54345 -7.38195,-5.9387 -15.31613,-14.40477 -26.02578,-27.77052 -41.48126,-34.78323 -63.83016,-28.96207 -13.46854,3.50809 -29.91969,13.00318 -43.40051,25.04938 l -7.39461,6.60769 -2.74479,-6.21153 c -3.85191,-8.71695 -7.74086,-33.75661 -6.85596,-44.14317 0.39164,-4.59681 1.65857,-14.08399 2.81541,-21.08265 l 2.10334,-12.72482 -2.94356,-2.38355 c -1.61896,-1.31095 -4.27041,-2.38354 -5.89214,-2.38354 -2.5725,0 -3.43816,1.47904 -6.78724,11.59652 -5.30197,16.01713 -10.5695,24.30406 -24.1656,38.0176 -9.94095,10.02681 -13.55461,12.71379 -24.21727,18.00702 -16.19285,8.03854 -22.41681,8.36531 -33.65824,1.76715 -9.8906,-5.80531 -36.23284,-32.24561 -46.11204,-46.2837 -4.2148,-5.98912 -11.91769,-16.57717 -17.11752,-23.529 -11.1464,-14.90198 -11.50657,-12.93169 5.41856,-29.64223 28.21736,-27.85962 66.08737,-46.41129 109.36954,-53.57769 19.64422,-3.25257 51.12335,-3.50196 70.2013,-0.55616 53.99739,8.33766 100.33036,34.5648 129.44088,73.27103 9.48221,12.60782 20.22012,34.76687 24.30038,50.14693 3.01319,11.35785 3.41121,15.25872 3.41121,33.43128 0,18.06367 -0.40611,22.09535 -3.32946,33.05301 -2.85418,10.69842 -12.59953,34.45247 -14.13449,34.45247 -0.27959,0 -2.26473,-2.45913 -4.41143,-5.46473 z"

@@ -24,7 +24,7 @@ import { projects } from "../data";
 
 const useStyles = makeStyles((theme) => ({
   logo: {
-    height: 28,
+    height: 72,
     marginRight: theme.spacing(2),
   },
   drawerList: {
@@ -75,10 +75,10 @@ function Navbar(props) {
         <Container disableGutters>
           <Toolbar>
             <Link to="/">
-              <img src={logo} className="App-logo" alt="Logo" />
+              <img src={logo} className={classes.logo} alt="Logo" />
             </Link>
             <div className={classes.spacer} />
-            <Stack>
+            {/* <Stack>
               <Button variant="outlined" sx={{ color: '#fff' }}>
                 Connect Wallet
               </Button>
@@ -87,7 +87,7 @@ function Navbar(props) {
                   You must install the MetaMask browser extension @ <a href="https://metamask.io/" style={{ color: '#fff' }}>metamask.io</a>
                 </Typography>
               )}
-            </Stack>
+            </Stack> */}
             {pathname !== "/" && (
               <IconButton
                 onClick={() => props.setDrawerOpen(true)}

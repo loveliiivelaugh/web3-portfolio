@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, useLocation } from 'react-router-dom';
-import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import LinkMui from "@mui/material/Link";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { makeStyles } from "@material-ui/core/styles";
 import Section from "./Section";
@@ -38,11 +38,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-end",
   },
   link: {
-    color: "inherit",
-    lineHeight: 1,
+    color: "#fff",
+    lineHeight: 1.5,
     "&:not(:last-of-type)": {
       marginRight: "1.2rem",
     },
+    textDecoration: 'none'
   },
   left: {
     [theme.breakpoints.up("sm")]: {
@@ -90,39 +91,16 @@ function Footer(props) {
     >
       <Container>
         <div className={classes.wrapper}>
-          {pathname !== "/" && (
+          {pathname !== "/" ? ' ' : (
             <div className={`${classes.item} ${classes.left}`}>
               <Link to="/">
                 <img src={props.logo} alt="Logo" className={classes.brand} />
               </Link>
             </div>
           )}
-          <div
-            className={`${classes.item} ${classes.right} ${classes.smallLinks}`}
-          >
-            <Typography>
-              <LinkMui to="/" className={classes.link}>
-                Home
-              </LinkMui>
-              <LinkMui to="/about" className={classes.link}>
-                About
-              </LinkMui>
-              <LinkMui to="/contact" className={classes.link}>
-                Contact
-              </LinkMui>
-              <LinkMui
-                href="https://medium.com"
-                target="_blank"
-                rel="noreferrer"
-                className={classes.link}
-              >
-                Blog
-              </LinkMui>
-            </Typography>
-          </div>
           <div className={`${classes.item} ${classes.right} ${classes.social}`}>
             <a
-              href="https://twitter.com/divjoy"
+              href="https://twitter.com/loveliiivelaugh"
               target="_blank"
               rel="noreferrer"
               className={classes.link}
@@ -130,12 +108,12 @@ function Footer(props) {
               <TwitterIcon fontSize="small" />
             </a>
             <a
-              href="https://facebook.com/DivjoyOfficial"
+              href="https://LinkedIn.com/in/michaelanthonywoodward"
               target="_blank"
               rel="noreferrer"
               className={classes.link}
             >
-              <FacebookIcon fontSize="small" />
+              <LinkedInIcon fontSize="small" />
             </a>
             <a
               href="https://instagram.com"
@@ -146,33 +124,47 @@ function Footer(props) {
               <InstagramIcon fontSize="small" />
             </a>
           </div>
-          <div className={`${classes.item} ${classes.left}`}>
-            Buy me a coffee or a beer STRIPE
-            {/* <Stripe /> */}
-          </div>
-          <div className={`${classes.item} ${classes.left}`}>
-            Donate BTC or ETH CRYPTO
-            <Button variant="contained" color="primary" onClick={() => console.log({ donate: 5 })}>
-              $5
-            </Button>
-          </div>
-          <div className={`${classes.item} ${classes.left}`}>
-            <p>Shout out at <a href="mailto:woodward.michael.a@gmail.com" style={{ color: '#ddd', textDecoration: 'none' }}>email@email.com</a></p>
-          </div>
-          <div className={`${classes.item} ${classes.left}`}>
-            <center>
-              <p>See my resume at <a href="#" style={{ color: '#ddd', textDecoration: 'none' }}>Michael Woodward Front End Developer</a></p>
-            </center>
-          </div>
-          <span className={`${classes.item} ${classes.legal} ${classes.left}`}>
-            {props.copyright}
-            {/* <LinkMui to="/legal/terms-of-service">
-              Terms
-            </LinkMui>
-            <LinkMui to="/legal/privacy-policy">
-              Privacy
-            </LinkMui> */}
-          </span>
+          <Grid container>
+            <Grid item md={6} className={`${classes.left}`} p={2}>
+              <Typography variant="body1">Shout out at <a href="mailto:woodward.michael.a@gmail.com" style={{ color: '#ddd', textDecoration: 'none' }}>woodward.michael.a@gmail.com</a></Typography>
+            </Grid>
+            <Grid item md={6} textAlign="right" p={2}>
+              <Typography variant="body1">See my resume at <a href="#" style={{ color: '#ddd', textDecoration: 'none' }}>Michael Woodward Front End Web Developer</a></Typography>
+            </Grid>
+            <Grid item md={6} className={`${classes.left}`} p={2}>
+              <Typography variant="body1">
+                Drop some coin or an NFT 😎 0xe5F6BC85E03d7aC6819C97ac1dB1d2a237C05Edf
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid container>
+            <Grid item md={12} className={`${classes.item}`} p={2}>
+              <Typography>
+                <LinkMui to="/" className={classes.link}>
+                  Home
+                </LinkMui>
+                <LinkMui to="/about" className={classes.link}>
+                  About
+                </LinkMui>
+                <LinkMui href="mailto:woodward.michael.a@gmail.com" className={classes.link}>
+                  Contact
+                </LinkMui>
+                <LinkMui
+                  href="https://medium.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={classes.link}
+                >
+                  Blog
+                </LinkMui>
+              </Typography>
+            </Grid>
+            <Grid item md={12} p={2}>
+              <Typography variant="body1" className={classes.item}>
+                {props.copyright}
+              </Typography>
+            </Grid>
+          </Grid>
         </div>
       </Container>
     </Section>
