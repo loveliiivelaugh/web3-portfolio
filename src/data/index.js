@@ -19,16 +19,16 @@ export const items = [
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: blockchain,
-    url: "https://basic-crypto-dashboard.netlify.app/",
-    repo: ""
+    url: "https://web3-scheduler.netlify.app/",
+    repo: "https://github.com/loveliiivelaugh/web3-appointment-scheduler"
   },
   {
     title: "Fintech",
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: fintech,
-    url: "https://basic-crypto-dashboard.netlify.app/",
-    repo: ""
+    url: "https://basic-plaid-dashboard.herokuapp.com/",
+    repo: "https://github.com/loveliiivelaugh/basic-plaid-dashboard"
   },
   {
     title: "eCommerce",
@@ -70,7 +70,7 @@ export const projects = [
         },
         url: "https://coffee-shop-shopify-context.netlify.app/",
         repo: "https://github.com/loveliiivelaugh/coffee-shopify",
-        type: "web"
+        type: "Ecommerce"
       },
       {
         title: "Crypto Analysis Dashboard",
@@ -82,19 +82,19 @@ export const projects = [
         },
         url: "https://basic-crypto-dashboard.netlify.app/",
         repo: "https://github.com/loveliiivelaugh/crypto-dashboard",
-        type: "Blog"
+        type: "Dashboard"
       },
       {
-        title: "Analytics Dashboard",
-        descr: "A private dashboard to track and analyze my private information across many areas of my life including health metrics, work hours, budget and expense tracking, investments, entertainment analytics, and more.",
+        title: "Web3 Appointment Scheduler",
+        descr: "A web application that allows users to schedule paid appointments with a professional for example a dr. or a personal trainer, etc. and pay for the time with crypto using a web3 technologies.",
         screenshots: {
           phone: '',
           tablet: '',
           desktop: '',
         },
-        url: "https://coffee-shop-shopify-context.netlify.app/",
-        repo: "https://github.com/loveliiivelaugh/coffee-shopify",
-        type: "Analytics Dashboard"
+        url: "https://web3-scheduler.netlify.app/",
+        repo: "https://github.com/loveliiivelaugh/web3-appointment-scheduler",
+        type: "Dapp"
       },
       {
         title: "Portfolio",

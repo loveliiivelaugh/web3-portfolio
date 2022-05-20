@@ -18,7 +18,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { makeStyles } from "@material-ui/core/styles";
 import Section from "./Section";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/custom-logo.png";
+import logo from "../assets/favicon.ico";
 // import { useDarkMode } from "../util/theme";
 import { projects } from "../data";
 
@@ -75,7 +75,7 @@ function Navbar(props) {
         <Container disableGutters>
           <Toolbar>
             <Link to="/">
-              <img src={logo} className={classes.logo} alt="Logo" />
+              {/* <img src={logo} className={classes.logo} alt="Logo" /> */}
             </Link>
             <div className={classes.spacer} />
             {/* <Stack>

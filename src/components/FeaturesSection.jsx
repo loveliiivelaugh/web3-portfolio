@@ -41,7 +41,6 @@ function FeaturesSection(props) {
 
   const handleHover = event => {
     const { id } = event.target;
-    console.info('hover event:', { id });
     setOverlay(id);
   };
 

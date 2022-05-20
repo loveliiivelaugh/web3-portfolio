@@ -94,7 +94,7 @@ function Footer(props) {
           {pathname !== "/" ? ' ' : (
             <div className={`${classes.item} ${classes.left}`}>
               <Link to="/">
-                <img src={props.logo} alt="Logo" className={classes.brand} />
+                {/* <img src={props.logo} alt="Logo" className={classes.brand} /> */}
               </Link>
             </div>
           )}
@@ -126,15 +126,15 @@ function Footer(props) {
           </div>
           <Grid container>
             <Grid item md={6} className={`${classes.left}`} p={2}>
-              <Typography variant="body1">Shout out at <a href="mailto:woodward.michael.a@gmail.com" style={{ color: '#ddd', textDecoration: 'none' }}>woodward.michael.a@gmail.com</a></Typography>
+              <Typography variant="body1">Contact me at <a href="mailto:woodward.michael.a@gmail.com" style={{ color: '#ddd', textDecoration: 'none' }}>woodward.michael.a@gmail.com</a></Typography>
             </Grid>
             <Grid item md={6} textAlign="right" p={2}>
-              <Typography variant="body1">See my resume at <a href="#" style={{ color: '#ddd', textDecoration: 'none' }}>Michael Woodward Front End Web Developer</a></Typography>
-            </Grid>
-            <Grid item md={6} className={`${classes.left}`} p={2}>
               <Typography variant="body1">
                 Drop some coin or an NFT 😎 0xe5F6BC85E03d7aC6819C97ac1dB1d2a237C05Edf
               </Typography>
+            </Grid>
+            <Grid item md={6} className={`${classes.left}`} p={2}>
+              <Typography variant="body1"><a href="#" style={{ color: '#ddd', textDecoration: 'none' }}>View my resume</a></Typography>
             </Grid>
           </Grid>
           <Grid container>
