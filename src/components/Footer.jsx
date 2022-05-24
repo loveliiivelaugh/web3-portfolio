@@ -75,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
 function Footer(props) {
   const classes = useStyles();
   const { pathname } = useLocation();
+  const resumeLink = 'https://docs.google.com/document/d/1XRXuKHKSs5A1Kh2XkxHu-qxJpbrd527_ug9ycvp7u2o/edit?usp=sharing';
   // const darkMode = useDarkMode();
   // Use inverted logo if specified
   // and we are in dark mode
@@ -130,11 +131,17 @@ function Footer(props) {
             </Grid>
             <Grid item md={6} textAlign="right" p={2}>
               <Typography variant="body1">
-                Drop some coin or an NFT 😎 0xe5F6BC85E03d7aC6819C97ac1dB1d2a237C05Edf
+                Drop some coin or an NFT 😎 @ 0xe5F6BC85E03d7aC6819C97ac1dB1d2a237C05Edf
+                <br/>
+                or @ michaelwoodward.eth
               </Typography>
             </Grid>
             <Grid item md={6} className={`${classes.left}`} p={2}>
-              <Typography variant="body1"><a href="#" style={{ color: '#ddd', textDecoration: 'none' }}>View my resume</a></Typography>
+              <Typography variant="body1">
+                <a href={resumeLink} target="blank" style={{ color: '#ddd', textDecoration: 'none' }}>
+                  View my resume
+                </a>
+              </Typography>
             </Grid>
           </Grid>
           <Grid container>
@@ -149,14 +156,14 @@ function Footer(props) {
                 <LinkMui href="mailto:woodward.michael.a@gmail.com" className={classes.link}>
                   Contact
                 </LinkMui>
-                <LinkMui
+                {/* <LinkMui
                   href="https://medium.com"
                   target="_blank"
                   rel="noreferrer"
                   className={classes.link}
                 >
                   Blog
-                </LinkMui>
+                </LinkMui> */}
               </Typography>
             </Grid>
             <Grid item md={12} p={2}>
