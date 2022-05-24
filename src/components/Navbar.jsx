@@ -18,7 +18,6 @@ import ListItemText from "@mui/material/ListItemText";
 import { makeStyles } from "@material-ui/core/styles";
 import Section from "./Section";
 import { Link } from "react-router-dom";
-import logo from "../assets/favicon.ico";
 // import { useDarkMode } from "../util/theme";
 import { projects } from "../data";
 

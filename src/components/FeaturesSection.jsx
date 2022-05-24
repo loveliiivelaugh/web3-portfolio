@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
 import { items } from './../data';
+import { projectsData } from '../data/projects.js';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -66,7 +67,7 @@ function FeaturesSection(props) {
         />
         <Container maxWidth={false}>
           <Grid container spacing={4}>
-          {items.map(({ title, description, image, repo, url }, index) => (
+          {projectsData.map(({ title, features, img, repo, url }, index) => (
             <Grid key={index} item md={4}>
             <React.Suspense fallback="Loading...">
               <motion.div
@@ -79,7 +80,7 @@ function FeaturesSection(props) {
               >
               <motion.img 
                 id={`${title}-card`}
-                src={image} 
+                src={img} 
                 style={{
                   opacity: overlay === `${title}-card` ? 0.1 : 0.8,
                   height: '220px',
@@ -116,7 +117,7 @@ function FeaturesSection(props) {
                     {title}
                   </Typography>
                   <Typography variant="subtitle1">
-                    {description}
+                    {features}
                   </Typography>
                   <Button variant="contained" color="primary" onClick={() => repo === '#' ? triggerWarning() : window.open(repo)}>
                     Source Code
