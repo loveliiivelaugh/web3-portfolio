@@ -43,17 +43,41 @@ export const items = [
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: ai,
-    url: "https://basic-crypto-dashboard.netlify.app/",
-    repo: ""
+    url: "#",
+    repo: "#"
   },
   {
     title: "Back End Development",
     description:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     image: backend,
-    url: "https://basic-crypto-dashboard.netlify.app/",
-    repo: ""
+    url: "#",
+    repo: "#"
   },
+  // {
+  //   title: "Animation/3D",
+  //   description:
+  //     "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+  //   image: ecommerce,
+  //   url: "https://coffee-shop-shopify-context.netlify.app/",
+  //   repo: "https://github.com/loveliiivelaugh/coffee-shopify",
+  // },
+  // {
+  //   title: "Mobile Development",
+  //   description:
+  //     "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+  //   image: ai,
+  //   url: "https://basic-crypto-dashboard.netlify.app/",
+  //   repo: ""
+  // },
+  // {
+  //   title: "Gaming",
+  //   description:
+  //     "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+  //   image: backend,
+  //   url: "https://basic-crypto-dashboard.netlify.app/",
+  //   repo: ""
+  // },
 ];
 
 export const projects = [

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import {Box, Button, Container, Grid, Typography} from "@mui/material";
+import { Alert, Box, Button, Container, Grid, Snackbar, Typography } from "@mui/material";
 import {makeStyles} from "@material-ui/core/styles";
 import { motion } from 'framer-motion';
 import Section from "./Section";
@@ -38,10 +38,16 @@ function FeaturesSection(props) {
   const classes = useStyles();
   const navigate = useNavigate();
   const [overlay, setOverlay] = useState('');
+  const [open, setOpen] = useState(false);
 
   const handleHover = event => {
     const { id } = event.target;
     setOverlay(id);
+  };
+
+  const triggerWarning = () => {
+    console.warn('Warning triggered!');
+    setOpen(true);
   };
 
   return (
@@ -112,11 +118,11 @@ function FeaturesSection(props) {
                   <Typography variant="subtitle1">
                     {description}
                   </Typography>
-                  <Button variant="contained" color="primary" onClick={() => window.open(repo)}>
+                  <Button variant="contained" color="primary" onClick={() => repo === '#' ? triggerWarning() : window.open(repo)}>
                     Source Code
                   </Button>
                   {' '}
-                  <Button variant="outlined" color="primary" sx={{ color: '#fff' }} onClick={() => window.open(url)}>
+                  <Button variant="outlined" color="primary" sx={{ color: '#fff' }} onClick={() => url === '#' ? triggerWarning() : window.open(url)}>
                     See Live
                   </Button>
                 </Box>
@@ -126,6 +132,15 @@ function FeaturesSection(props) {
           ))}
           </Grid>
         </Container>
+        <Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={() => setOpen(false)}
+          message="Note archived"
+          // action={action}
+        >
+          <Alert severity="warning">Demo App Coming Soon!</Alert>
+        </Snackbar>
       </Container>
     </Section>
   );
