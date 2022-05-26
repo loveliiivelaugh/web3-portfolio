@@ -1,43 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
 import { Alert, Box, Button, Container, Grid, Snackbar, Typography } from "@mui/material";
-import {makeStyles} from "@material-ui/core/styles";
 import { motion } from 'framer-motion';
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
-import { items } from './../data';
 import { projectsData } from '../data/projects.js';
-
-
-const useStyles = makeStyles((theme) => ({
-  itemsContainer: {
-    marginTop: 60,
-  },
-  row: {
-    // Reverse every other row
-    "&:nth-of-type(even)": {
-      flexDirection: "row-reverse",
-    },
-
-    // Spacing between rows
-    "&:not(:last-child)": {
-      marginBottom: `${theme.spacing(3)}px`,
-    },
-  },
-  figure: {
-    maxWidth: 300,
-    margin: "30px auto",
-  },
-  image: {
-    height: "auto",
-    maxWidth: "100%",
-  },
-}));
-
+import { items } from './../data';
 
 function FeaturesSection(props) {
-  const classes = useStyles();
-  const navigate = useNavigate();
   const [overlay, setOverlay] = useState('');
   const [open, setOpen] = useState(false);
   const handleHover = event => setOverlay(event.target.id);
@@ -110,11 +79,11 @@ function FeaturesSection(props) {
                   <Typography variant="subtitle2">
                     {features}
                   </Typography>
-                  <Button variant="contained" color="primary" onClick={() => repo === '#' ? setOpen(true) : navigate(repo)}>
+                  <Button variant="contained" color="primary" onClick={() => repo === '#' ? setOpen(true) : window.open(repo)}>
                     Source Code
                   </Button>
                   {' '}
-                  <Button variant="outlined" color="primary" sx={{ color: '#fff' }} onClick={() => url === '#' ? setOpen(true) : navigate(url)}>
+                  <Button variant="outlined" color="primary" sx={{ color: '#fff' }} onClick={() => url === '#' ? setOpen(true) : window.open(url)}>
                     See Live
                   </Button>
                 </Box>
