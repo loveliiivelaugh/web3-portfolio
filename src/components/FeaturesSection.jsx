@@ -107,7 +107,7 @@ function FeaturesSection(props) {
                   <Typography variant="h5" gutterBottom>
                     {title}
                   </Typography>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle2">
                     {features}
                   </Typography>
                   <Button variant="contained" color="primary" onClick={() => repo === '#' ? setOpen(true) : navigate(repo)}>

@@ -35,7 +35,7 @@ export const projectsData = [
   {
     title: "Web3 Scheduler",
     features:
-      "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
+      "An appointment scheduling app built with React and powered by blockchain technology.",
     img: blockchain,
     url: "https://web3-scheduler.netlify.app/",
     repo: "https://github.com/loveliiivelaugh/web3-appointment-scheduler"
@@ -43,7 +43,7 @@ export const projectsData = [
   {
     title: "Budget Me 5000",
     features:
-      "This is a budgeting and account management app. It allows users to connect to their personal bank accounts using Plaid.",
+      "This budgeting and account management app allows users to connect and view their personal bank account details using Plaid.",
     img: budgetme,
     url: "https://basic-plaid-dashboard.herokuapp.com/",
     repo: "https://github.com/loveliiivelaugh/basic-plaid-dashboard"
@@ -58,7 +58,7 @@ export const projectsData = [
     info2:
       '',
     features:
-      'Large E-Commerce Shopify Coffee Shop featuring 8 pages excluding each of the single product pages for every product available. UI is built with React and Bootstrap. Context is used for state management. I built this example shop to highlight my ability to build a custom React front end making use of Shopifys custom apps API.',
+      'An eCommerce site that allows users to browse and purchase coffee from a variety of brands. Built with React, Redux, and Shopify.',
     technologies: 
       'Bootstrap, JavaScript, React, Shopify, Context, Netlify',
     likes: 
@@ -92,13 +92,13 @@ export const projectsData = [
     img: employee_management_system,
     alt: '',
     caption: '',
-    title: 'Employee Management System',
+    title: 'Employee Management',
     info:
       '',
     info2:
       '',
     features:
-      'Employee management system built with React, MaterialUI, Firebase for auth and for the noSql Firestore database. This is an attempt to build this project ahead of having to build it as part of a coding bootcamp curriculum I am about to begin.',
+      'A full-stack employee management system that allows users to add, edit, delete, and track employees. Built with React, Redux, MongoDB, and Node.js.',
     technologies: 
       'React, Javascript, Firebase',
     likes: '',
@@ -137,7 +137,7 @@ export const projectsData = [
     info2:
       '',
     features:
-      'This is a sample exercise tracker app built with React and Firebase.',
+      'A full-stack exercise tracker that allows users to add, edit, delete, and track exercises. Built with React, Redux, MongoDB, and Node.js.',
     technologies: 
       'React, Javascript, Firebase',
     likes: '',
@@ -246,7 +246,7 @@ export const projectsData = [
     url: 'https://loveliiivelaugh.github.io/nu-hw5-daily-scheduler/',
     repo: 'https://github.com/loveliiivelaugh/nu-hw5-daily-scheduler',
     title: 'Work Day Scheduler',
-    features: 'A small daily scheduler app built with vanilla HTML, CSS, JavaScript, and Moment.js. Seperates the day into hourly time blocks that the user can store notes and appointments in. Data is persisted using local storage.',
+    features: 'A small daily scheduler app that seperates the day into hourly time blocks that the user can store notes and appointments in. Built with vanilla JavaScript and local storage.',
     technologies: 'JavaScript, Moment.js',
     tutorial: {
       author: null,
@@ -264,7 +264,7 @@ export const projectsData = [
     url: 'https://loveliiivelaugh.github.io/nu-hw4-coding-quiz/',
     repo: 'https://github.com/loveliiivelaugh/nu-hw4-coding-quiz',
     title: 'Code Quiz',
-    features: ' A small quiz application to repeatedly ask the user coding practice questions until either the time runs out or the questions run out and keeps track of the score and the time along the way.',
+    features: ' A small quiz application that asks the user coding practice questions until either the time  or the questions run out. Also keeps track of the score and the time to complete.',
     technologies: 'JavaScript, Local Storage',
     tutorial: {
       author: null,
@@ -283,7 +283,7 @@ export const projectsData = [
     url: 'https://loveliiivelaugh.github.io/nu-hw6-weather-dashboard/',
     repo: 'https://github.com/loveliiivelaugh/nu-hw6-weather-dashboard',
     title: 'Weather Dashboard',
-    features: 'A small weather application featuring the ability to find weather and 5-day forecasts for multiple cities of choosing. This application makes use of the OpenWeatherAPI for live weather data.',
+    features: 'A small weather application featuring the ability to find weather and 5-day forecasts for multiple cities of choosing.',
     technologies: 'JavaScript, Bootstrap, API',
     tutorial: {
       author: null,
@@ -364,7 +364,7 @@ export const projectsData = [
       info2:
         '',
       features:
-      'This is a small typing game. Will add an API to dynamically bring in new words in addition to some extra functions distributing those words into seperate categories by their defined difficulties.',
+      'This is a small typing game that measures how fast the user can type and how many words they can type per minute.',
       technologies: 
         'HTML, CSS, JavaScript, Wordpress, PHP',
       likes: '',
