@@ -40,16 +40,7 @@ function FeaturesSection(props) {
   const navigate = useNavigate();
   const [overlay, setOverlay] = useState('');
   const [open, setOpen] = useState(false);
-
-  const handleHover = event => {
-    const { id } = event.target;
-    setOverlay(id);
-  };
-
-  const triggerWarning = () => {
-    console.warn('Warning triggered!');
-    setOpen(true);
-  };
+  const handleHover = event => setOverlay(event.target.id);
 
   return (
     <Section
@@ -119,11 +110,11 @@ function FeaturesSection(props) {
                   <Typography variant="subtitle1">
                     {features}
                   </Typography>
-                  <Button variant="contained" color="primary" onClick={() => repo === '#' ? triggerWarning() : window.open(repo)}>
+                  <Button variant="contained" color="primary" onClick={() => repo === '#' ? setOpen(true) : navigate(repo)}>
                     Source Code
                   </Button>
                   {' '}
-                  <Button variant="outlined" color="primary" sx={{ color: '#fff' }} onClick={() => url === '#' ? triggerWarning() : window.open(url)}>
+                  <Button variant="outlined" color="primary" sx={{ color: '#fff' }} onClick={() => url === '#' ? setOpen(true) : navigate(url)}>
                     See Live
                   </Button>
                 </Box>
@@ -148,25 +139,3 @@ function FeaturesSection(props) {
 }
 
 export default FeaturesSection;
-
-const ProjectsCarousel = ({projects, classes}) => {
-  const [activeItem, setActiveItem] = useState(0);
-
-  const handlePrev = (max) => setActiveItem(prev => (prev === 0 ? max : prev - 1));
-  const handleNext = (max) => setActiveItem(prev => (prev === max ? 0 : prev + 1));
-  return (
-    <>
-      <Button variant="text" color="primary" onClick={() => handlePrev(projects.length - 1)}>{'<'}</Button>
-        {projects.map(({title, image}, index) => index === activeItem && (
-          <figure className={classes.figure}>
-            <img
-              src={image}
-              alt={title}
-              className={classes.image}
-            />
-          </figure>
-        ))}
-      <Button variant="text" color="primary" onClick={() => handleNext(projects.length - 1)}>{'>'}</Button>
-    </>
-  )
-}

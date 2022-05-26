@@ -131,7 +131,9 @@ function Footer(props) {
             </Grid>
             <Grid item md={6} textAlign="right" p={2}>
               <Typography variant="body1">
-                Drop some coin or an NFT 😎 @ 0xe5F6BC85E03d7aC6819C97ac1dB1d2a237C05Edf
+                Drop some coin or an NFT 😎
+                <br/>
+                @ 0xe5F6BC85E03d7aC6819C97ac1dB1d2a237C05Edf
                 <br/>
                 or @ michaelwoodward.eth 💛
               </Typography>

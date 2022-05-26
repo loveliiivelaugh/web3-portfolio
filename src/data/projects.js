@@ -19,19 +19,21 @@ import ai from '../assets/images/ai.jpeg';
 import backend from '../assets/images/backend.jpeg';
 import fintech from '../assets/images/fintech.jpeg';
 import ecommerce from '../assets/images/ecommerce.jpeg';
+import crypto_dashboard from '../assets/images/crypto-dashboard.png';
+import budgetme from '../assets/images/budgetme.png';
 
 // PROJECTS DATA
 export const projectsData = [
   {
-    title: "Web Development",
+    title: "Crypto Dashboard",
     features:
-      "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-    img: web,
+      "A React.js dashboard that displays the current price, market cap, and volume of each cryptocurrency.",
+    img: crypto_dashboard,
     url: "https://basic-crypto-dashboard.netlify.app/",
     repo: "https://github.com/loveliiivelaugh/crypto-dashboard",
   },
   {
-    title: "Blockchain",
+    title: "Web3 Scheduler",
     features:
       "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
     img: blockchain,
@@ -39,10 +41,10 @@ export const projectsData = [
     repo: "https://github.com/loveliiivelaugh/web3-appointment-scheduler"
   },
   {
-    title: "Fintech",
+    title: "Budget Me 5000",
     features:
-      "Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.",
-    img: fintech,
+      "This is a budgeting and account management app. It allows users to connect to their personal bank accounts using Plaid.",
+    img: budgetme,
     url: "https://basic-plaid-dashboard.herokuapp.com/",
     repo: "https://github.com/loveliiivelaugh/basic-plaid-dashboard"
   },
