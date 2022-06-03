@@ -33,8 +33,8 @@ function FeaturesSection(props) {
               onHoverStart={handleHover} 
               onHoverEnd={() => setOverlay('')}
               whileHover={{ scale: 1.1 }}
-              onTap={() => { setOverlay(''); handleHover(); }}
-              // whileTap={{ scale: 0.9 }}
+              onTapStart={() => setOverlay('')}
+              whileTap={event => handleHover(event)}
               style={{
                 position: 'relative',
                 height: '220px',
