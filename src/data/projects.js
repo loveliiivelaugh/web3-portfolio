@@ -1,24 +1,14 @@
 //import pics
-import flash_cards from "../assets/images/flash-cards.png";
-import lyrics_search from "../assets/images/lyrics-search.png";
-import meal_finder from "../assets/images/meal-finder.png";
-import weather from "../assets/images/weather.png";
 import exercise_tracker from "../assets/images/exercise-tracker.png";
 import readme_generator from "../assets/images/screenshot-readme-generator.png";
 import employee_management_system from "../assets/images/employee-management-system-screenshot.png";
-import election_api from "../assets/images/2020-election-api.png";
 import tastyGen from '../assets/images/tastyGen_screenshot.png';
 import rps from '../assets/images/rps.png';
 import workday from '../assets/images/workday-scheduler.png';
 import code_quiz from '../assets/images/code-quiz.png';
 import weather_dashboard from '../assets/images/bootstrap-weather-dashboard.png';
 import any_eats from '../assets/images/any-eats.jpg';
-import web from './../assets/images/web.jpeg';
 import blockchain from '../assets/images/blockchain.jpeg';
-import ai from '../assets/images/ai.jpeg';
-import backend from '../assets/images/backend.jpeg';
-import fintech from '../assets/images/fintech.jpeg';
-import ecommerce from '../assets/images/ecommerce.jpeg';
 import crypto_dashboard from '../assets/images/crypto-dashboard.png';
 import budgetme from '../assets/images/budgetme.png';
 

@@ -5,6 +5,7 @@ import  FeaturesSection from '../components/FeaturesSection';
 import  TestimonialsSection from '../components/TestimonialsSection';
 
 const Home = () => {
+
   return (
     <>
       <ColoredTransition delay={2} color="#333" direction="up" />

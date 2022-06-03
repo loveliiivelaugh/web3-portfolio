@@ -47,7 +47,7 @@ const Layout = () => {
           bgImageOpacity={1}
           description="A full stack craftsmen of today's web technologies"
           copyright={`© ${new Date().getFullYear()} Michael Woodward`}
-          logo={logo}
+          // logo={logo}
           logoInverted="https://uploads.divjoy.com/logo-white.svg"
           sticky
         />

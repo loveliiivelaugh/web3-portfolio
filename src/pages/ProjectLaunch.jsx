@@ -10,7 +10,6 @@ import computer from '../assets/images/computer.png';
 import phone from '../assets/images/phone.png';
 import tablet from '../assets/images/tablet.png';
 
-
 const ProjectLaunch = (props) => {
   const [selected, setSelected] = useState(null);
   const [overlay, setOverlay] = useState('');

@@ -9,6 +9,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { makeStyles } from "@material-ui/core/styles";
 import Section from "./Section";
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
 // import { useDarkMode } from "./../util/theme";
 // import Stripe from './stripe';
 
@@ -43,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
     "&:not(:last-of-type)": {
       marginRight: "1.2rem",
     },
-    textDecoration: 'none'
+    textDecoration: 'none',
+    cursor: 'pointer'
   },
   left: {
     [theme.breakpoints.up("sm")]: {
@@ -126,11 +129,11 @@ function Footer(props) {
             </a>
           </div>
           <Grid container>
-            <Grid item md={6} className={`${classes.left}`} p={2}>
+            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'left'}} p={2}>
               <Typography variant="body1">Contact me at <a href="mailto:woodward.michael.a@gmail.com" style={{ color: '#ddd', textDecoration: 'none' }}>woodward.michael.a@gmail.com</a></Typography>
             </Grid>
-            <Grid item md={6} textAlign="right" p={2}>
-              <Typography variant="body1">
+            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'right' }} p={2}>
+              <Typography variant="subtitle1">
                 Drop some coin or an NFT 😎
                 <br/>
                 @ 0xe5F6BC85E03d7aC6819C97ac1dB1d2a237C05Edf
@@ -138,16 +141,14 @@ function Footer(props) {
                 or @ michaelwoodward.eth 💛
               </Typography>
             </Grid>
-            <Grid item md={6} className={`${classes.left}`} p={2}>
+            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'left'}} p={2}>
               <Typography variant="body1">
                 <a href={resumeLink} target="blank" style={{ color: '#ddd', textDecoration: 'none' }}>
                   View my resume
                 </a>
               </Typography>
             </Grid>
-          </Grid>
-          <Grid container>
-            <Grid item md={12} className={`${classes.item}`} p={2}>
+            <Grid item md={12} p={2} textAlign="center">
               <Typography>
                 <LinkMui to="/" className={classes.link}>
                   Home
@@ -158,18 +159,10 @@ function Footer(props) {
                 <LinkMui href="mailto:woodward.michael.a@gmail.com" className={classes.link}>
                   Contact
                 </LinkMui>
-                {/* <LinkMui
-                  href="https://medium.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.link}
-                >
-                  Blog
-                </LinkMui> */}
               </Typography>
             </Grid>
-            <Grid item md={12} p={2}>
-              <Typography variant="body1" className={classes.item}>
+            <Grid item md={12} p={2} textAlign={{ sm: "center", md: 'right' }}>
+              <Typography variant="body1">
                 {props.copyright}
               </Typography>
             </Grid>
