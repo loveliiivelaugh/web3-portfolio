@@ -10,7 +10,7 @@ import weather_dashboard from '../assets/images/bootstrap-weather-dashboard.png'
 import any_eats from '../assets/images/any-eats.jpg';
 import blockchain from '../assets/images/blockchain.jpeg';
 import crypto_dashboard from '../assets/images/crypto-dashboard.png';
-import budgetme from '../assets/images/budgetme.png';
+import budgetme from '../assets/images/budgetme5000.png';
 
 // PROJECTS DATA
 export const projectsData = [
