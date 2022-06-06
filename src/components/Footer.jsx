@@ -132,7 +132,7 @@ function Footer(props) {
             <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'left'}} p={2}>
               <Typography variant="body1">Contact me at <a href="mailto:woodward.michael.a@gmail.com" style={{ color: '#ddd', textDecoration: 'none' }}>woodward.michael.a@gmail.com</a></Typography>
             </Grid>
-            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'right' }} p={2}>
+            {/* <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'right' }} p={2}>
               <Typography variant="subtitle1">
                 Drop some coin or an NFT 😎
                 <br/>
@@ -140,8 +140,8 @@ function Footer(props) {
                 <br/>
                 or @ michaelwoodward.eth 💛
               </Typography>
-            </Grid>
-            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'left'}} p={2}>
+            </Grid> */}
+            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'right'}} p={2}>
               <Typography variant="body1">
                 <a href={resumeLink} target="blank" style={{ color: '#ddd', textDecoration: 'none' }}>
                   View my resume

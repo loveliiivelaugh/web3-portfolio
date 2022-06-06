@@ -22,14 +22,14 @@ export const projectsData = [
     url: "https://basic-crypto-dashboard.netlify.app/",
     repo: "https://github.com/loveliiivelaugh/crypto-dashboard",
   },
-  {
-    title: "Web3 Scheduler",
-    features:
-      "An appointment scheduling app built with React and powered by blockchain technology.",
-    img: blockchain,
-    url: "https://web3-scheduler.netlify.app/",
-    repo: "https://github.com/loveliiivelaugh/web3-appointment-scheduler"
-  },
+  // {
+  //   title: "Web3 Scheduler",
+  //   features:
+  //     "An appointment scheduling app built with React and powered by blockchain technology.",
+  //   img: blockchain,
+  //   url: "https://web3-scheduler.netlify.app/",
+  //   repo: "https://github.com/loveliiivelaugh/web3-appointment-scheduler"
+  // },
   {
     title: "Budget Me 5000",
     features:

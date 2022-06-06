@@ -13,11 +13,11 @@ const Home = () => {
       {/* <Meta /> */}
       <FeaturesSection
         bgColor="default"
-        size="medium"
+        size="small"
         bgImage=""
         bgImageOpacity={1}
-        title="Michael Woodward"
-        subtitle="Professional Web Engineer"
+        title="Hi, I'm Michael Woodward"
+        subtitle="I am a professional Full Stack JavaScript Developer!"
       />
       {/* <TestimonialsSection
         bgColor="light"

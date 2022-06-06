@@ -15,15 +15,20 @@ function FeaturesSection(props) {
     // '#f44336',
     // '#e91e63',
     // '#9c27b0',
-    '#673ab7',
-    '#3f51b5',
-    '#2196f3',
-    '#03a9f4',
+    // '#673ab7',
+    // '#3f51b5',
+    // '#2196f3',
+    // '#03a9f4',
     '#00bcd4',
     '#009688',
     '#4caf50',
     '#8bc34a',
-  ]
+    '#ff9800',
+    '#ff5722',
+    '#795548',
+    '#9e9e9e',
+    '#607d8b',
+  ];
 
   return (
     <Section
@@ -40,8 +45,8 @@ function FeaturesSection(props) {
           textAlign="center"
         />
         <Grid container columnSpacing={4} rowSpacing={2} justifyContent="space-between">
-        {[...projectsData].splice(0, 4).map(({ title, features, img, repo, url }, index) => (
-        <Grid key={index} item md={6}>
+        {[...projectsData].splice(0, 3).map(({ title, features, img, repo, url }, index) => (
+        <Grid key={index} item xs={12} sm={6} md={4}>
           <Fade in>
             <motion.div
               id={title + '-card'}
@@ -61,7 +66,8 @@ function FeaturesSection(props) {
             >
             <motion.img 
               id={`${title}-card`}
-              src={img} 
+              src={img}
+              whileTap={handleHover}
               style={{
                 opacity: overlay === `${title}-card` ? 0.1 : 1,
                 height: '100%',
