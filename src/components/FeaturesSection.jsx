@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Alert, Box, Button, Container, Grid, Snackbar, Typography } from "@mui/material";
+import { Alert, Box, Button, Container, Grid, Fade, Snackbar, Typography } from "@mui/material";
 import { motion } from 'framer-motion';
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
@@ -10,6 +10,20 @@ function FeaturesSection(props) {
   const [overlay, setOverlay] = useState('');
   const [open, setOpen] = useState(false);
   const handleHover = event => setOverlay(event.target.id);
+
+  const colors = [
+    // '#f44336',
+    // '#e91e63',
+    // '#9c27b0',
+    '#673ab7',
+    '#3f51b5',
+    '#2196f3',
+    '#03a9f4',
+    '#00bcd4',
+    '#009688',
+    '#4caf50',
+    '#8bc34a',
+  ]
 
   return (
     <Section
@@ -25,28 +39,31 @@ function FeaturesSection(props) {
           size={4}
           textAlign="center"
         />
-        <Grid container columnSpacing={4} rowSpacing={2} justifyContent="center">
+        <Grid container columnSpacing={4} rowSpacing={2} justifyContent="space-between">
         {[...projectsData].splice(0, 4).map(({ title, features, img, repo, url }, index) => (
-          <Grid key={index} item md={6}>
+        <Grid key={index} item md={6}>
+          <Fade in>
             <motion.div
               id={title + '-card'}
               onHoverStart={handleHover} 
               onHoverEnd={() => setOverlay('')}
               whileHover={{ scale: 1.1 }}
-              onTapStart={() => setOverlay('')}
-              whileTap={event => handleHover(event)}
+              onClick={event => handleHover(event)}
+              whileTap={handleHover}
               style={{
                 position: 'relative',
                 height: '220px',
                 width: '340px',
-                margin: 'auto'
+                margin: 'auto',
+                padding: '10px',
+                backgroundColor: colors[index],
               }}
             >
             <motion.img 
               id={`${title}-card`}
               src={img} 
               style={{
-                opacity: overlay === `${title}-card` ? 0.1 : 0.8,
+                opacity: overlay === `${title}-card` ? 0.1 : 1,
                 height: '100%',
                 width: '100%',
                 borderRadius: '15px',
@@ -61,7 +78,7 @@ function FeaturesSection(props) {
               padding: '10px',
               color: '#fff'
             }}>
-              {title}
+              {/* {title} */}
             </Typography>
               <Box
                 sx={{
@@ -92,7 +109,8 @@ function FeaturesSection(props) {
                 </Button>
               </Box>
             </motion.div>
-          </Grid>
+          </Fade>
+        </Grid>
         ))}
         </Grid>
         <Snackbar
