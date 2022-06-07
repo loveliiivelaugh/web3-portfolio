@@ -44,7 +44,7 @@ const Layout = () => {
           bgColor="light"
           size="normal"
           bgImage=""
-          bgImageOpacity={1}
+          bgImageOpacity={0}
           description="A full stack craftsmen of today's web technologies"
           copyright={`© ${new Date().getFullYear()} Michael Woodward`}
           // logo={logo}

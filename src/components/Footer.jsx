@@ -46,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
       marginRight: "1.2rem",
     },
     textDecoration: 'none',
-    cursor: 'pointer'
   },
   left: {
     [theme.breakpoints.up("sm")]: {
@@ -84,24 +83,11 @@ function Footer(props) {
   // and we are in dark mode
   // const logo =
   //   props.logoInverted && darkMode.value ? props.logoInverted : props.logo;
-
+  
   return (
-    <Section
-      bgColor={props.bgColor}
-      size={props.size}
-      bgImage={props.bgImage}
-      bgImageOpacity={props.bgImageOpacity}
-      className={props.sticky && classes.sticky}
-    >
-      <Container>
+    <Container maxWidth="xl" sx={{ width: '100%' }}>
+      <Box component="footer" sx={{ position: 'absolute', bottom: 0, color: '#fff' }}>
         <div className={classes.wrapper}>
-          {pathname !== "/" ? ' ' : (
-            <div className={`${classes.item} ${classes.left}`}>
-              <Link to="/">
-                {/* <img src={props.logo} alt="Logo" className={classes.brand} /> */}
-              </Link>
-            </div>
-          )}
           <div className={`${classes.item} ${classes.right} ${classes.social}`}>
             <a
               href="https://twitter.com/loveliiivelaugh"
@@ -132,7 +118,7 @@ function Footer(props) {
             <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'left'}} p={2}>
               <Typography variant="body1">Contact me at <a href="mailto:woodward.michael.a@gmail.com" style={{ color: '#ddd', textDecoration: 'none' }}>woodward.michael.a@gmail.com</a></Typography>
             </Grid>
-            {/* <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'right' }} p={2}>
+            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'right' }} p={2}>
               <Typography variant="subtitle1">
                 Drop some coin or an NFT 😎
                 <br/>
@@ -140,8 +126,8 @@ function Footer(props) {
                 <br/>
                 or @ michaelwoodward.eth 💛
               </Typography>
-            </Grid> */}
-            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'right'}} p={2}>
+            </Grid>
+            <Grid item sm={12} md={6} textAlign={{ sm: 'center', md: 'left'}} p={2}>
               <Typography variant="body1">
                 <a href={resumeLink} target="blank" style={{ color: '#ddd', textDecoration: 'none' }}>
                   View my resume
@@ -168,8 +154,8 @@ function Footer(props) {
             </Grid>
           </Grid>
         </div>
-      </Container>
-    </Section>
+      </Box>
+    </Container>
   );
 }
 
