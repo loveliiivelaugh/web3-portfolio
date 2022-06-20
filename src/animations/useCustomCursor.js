@@ -9,12 +9,12 @@ export const useCustomCursor = () => {
     const mouseY = e.clientY;
     const mouseX = e.clientX;
     // console.log(cursor, mouseX, mouseY);
-    cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    // cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
   };
 
   useEffect(() => {
-    document.addEventListener('mousemove', followMouse);
-    return () => document.removeEventListener('mousemove', followMouse);
+    document.addEventListener("mousemove", followMouse);
+    return () => document.removeEventListener("mousemove", followMouse);
   }, []);
 
   const HeaderCursor = () => {
@@ -77,18 +77,25 @@ export const useCustomCursor = () => {
     );
   };
 
-
-  const customCursorStyle = { height: '100px', width: '100px', borderRadius: '50px', backgroundColor: 'red', opacity: 0, padding: 30, textAlign: 'center' };
+  const customCursorStyle = {
+    height: "100px",
+    width: "100px",
+    borderRadius: "50px",
+    backgroundColor: "red",
+    opacity: 0,
+    padding: 30,
+    textAlign: "center"
+  };
   const CustomCursor = () => (
-    <motion.div 
-      ref={cursorRef} 
+    <motion.div
+      ref={cursorRef}
       style={customCursorStyle}
       className="cursor"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <Typography sx={{ margin: 'auto' }} variant="subtitle2">
+      <Typography sx={{ margin: "auto" }} variant="subtitle2">
         About Me
       </Typography>
     </motion.div>
@@ -99,6 +106,6 @@ export const useCustomCursor = () => {
     HeaderCursor,
     EmailCursor,
     ResumeCursor,
-    CryptoCursor,
+    CryptoCursor
   };
-}
+};
